@@ -2,16 +2,16 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon --watch src --exec tsx src/server.ts",
+    "dev": "nodemon --watch src --exec tsx src/server.js",
     "build": "tsc",
     "start": "node dist/server.js",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
-    "lint": "eslint src/**/*.ts",
-    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.js",
     "typecheck": "tsc --noEmit"
   },
   "repository": {

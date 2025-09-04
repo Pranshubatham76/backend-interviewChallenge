@@ -1,18 +1,16 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Backend Interview Challenge - JavaScript (CommonJS)",
+  "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "build": "tsc",
     "start": "node src/server.js",
-    "test": "vitest",
+    "test": "vitest --environment node",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
     "lint": "eslint src/**/*.js",
-    "format": "prettier --write src/**/*.js",
-    "typecheck": "tsc --noEmit"
+    "format": "prettier --write src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -30,7 +28,6 @@
     "bcrypt": "^6.0.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^17.2.2",
-    "eslint": "^9.34.0",
     "express": "^5.1.0",
     "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.2",
@@ -44,18 +41,8 @@
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
-    "@types/node": "^24.3.0",
-    "@types/uuid": "^10.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.41.0",
-    "@typescript-eslint/parser": "^8.41.0",
-    "@vitest/ui": "^3.2.4",
     "eslint": "^9.34.0",
-    "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
-    "tsx": "^4.20.5",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
+    "@vitest/ui": "^3.2.4"
   }
 }

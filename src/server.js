@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const config = require('./config');
 const db = require('./db/db')
 const bodyParser = require('body-parser');
-const { specs, swaggerUi, swaggerSetup } = require('./swagger-config');
+const { specs, swaggerUi, swaggerSetup } = require('../swagger-config');
 
 dotenv.config();
 
